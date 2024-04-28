@@ -43,11 +43,11 @@ const Register = () => {
   //submit button function
   const handleSubmit=(e)=>{
     e.preventDefault()
+
     console.log(firstName,lastName,email,password,confirmPassword)
 
   }
-
-
+  
 
 
 
@@ -89,4 +89,3 @@ export default Register
 //1 make complete ui of the reg page (fields, button, etc)
 //2 input (type) -make a state
 //3 on change set the value to the state
-
