@@ -1,6 +1,23 @@
-import React from 'react'
+import React,{useState} from 'react'
 
 const Register = () => {
+  //logic section
+
+  //make a usestate for 5 fields
+  const[firstName,setFirstName]=useState('')
+  const[lastName,setLastName]=useState('')
+  const[email,setEmail]=useState('')
+  const[password,setPassword]=useState('')
+  const[confirmPassword,setConfirmPassword]=useState('')
+
+  //make each function for changing value
+  
+
+
+
+
+
+
   return (
     <>
     <div className='container mt-2' >
