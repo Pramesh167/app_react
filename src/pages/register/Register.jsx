@@ -32,6 +32,12 @@ const Register = () => {
 
   }
 
+  //submit button function
+  const handleSubmit=()=>{
+    console.log(firstName,lastName,email,password,confirmPassword)
+
+  }
+
 
 
 
@@ -61,7 +67,7 @@ const Register = () => {
       <input onChange={handleConfirmpassword} type='text' className='form-control' placeholder='Retype your Password to Confirm'/>
 
 
-      <button className='btn btn-light btn-outline-dark mt-4 w-100'>Create</button>
+      <button onClick={handleSubmit} className='btn btn-light btn-outline-dark mt-4 w-100'>Create</button>
     </form>
 
     </div>
