@@ -10,6 +10,14 @@ const Register = () => {
   const[password,setPassword]=useState('')
   const[confirmPassword,setConfirmPassword]=useState('')
 
+  //usetate for error message
+  const[firstNameError,setFirstNameError]=useState('')
+  const[lastNameError,setLastNameError]=useState('')
+  const[emailError,setEmailError]=useState('')
+  const[passwordError,setPasswordError]=useState('')
+  const[confirmPasswordError,setConfirmPasswordError]=useState('')
+  
+
   //make each function for changing value
   const handleFirstname=(e)=>{
     setFirstName(e.target.value);
@@ -33,7 +41,8 @@ const Register = () => {
   }
 
   //submit button function
-  const handleSubmit=()=>{
+  const handleSubmit=(e)=>{
+    e.preventDefault()
     console.log(firstName,lastName,email,password,confirmPassword)
 
   }
